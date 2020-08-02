@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"github.com/sausheong/mosaic-b/controllers"
+	"github.com/alex-levin/mosaic-b/controllers"
 	"github.com/astaxie/beego"
 )
 

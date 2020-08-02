@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 	"github.com/astaxie/beego"
-	"github.com/sausheong/mosaic-b/mosaic"
+	"github.com/alex-levin/mosaic-b/mosaic"
 )
 
 type MainController struct {

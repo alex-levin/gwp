@@ -3,15 +3,15 @@
 FROM golang
 
 # Copy the local package files to the container's workspace.
-ADD . /go/src/github.com/sausheong/ws-d
+ADD . /go/src/github.com/alex-levin/ws-d
 
-WORKDIR /go/src/github.com/sausheong/ws-d
+WORKDIR /go/src/github.com/alex-levin/ws-d
 
 # Build the ws-d command inside the container.
 # (You may fetch or manage dependencies here,
 # either manually or with a tool like "godep".)
 RUN go get github.com/lib/pq
-RUN go install github.com/sausheong/ws-d
+RUN go install github.com/alex-levin/ws-d
 
 # Run the ws-d command by default when the container starts.
 ENTRYPOINT /go/bin/ws-d

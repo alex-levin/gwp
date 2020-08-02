@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/sausheong/ws-martini/post"
+	"github.com/alex-levin/ws-martini/post"
 	"github.com/go-martini/martini"
 	"github.com/martini-contrib/render"
 	"github.com/martini-contrib/binding"

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/sausheong/ws-goji/post"
+	"github.com/alex-levin/ws-goji/post"
 	"github.com/zenazn/goji"
 
 )

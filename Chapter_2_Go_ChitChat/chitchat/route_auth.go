@@ -1,8 +1,10 @@
 package main
 
 import (
-	"github.com/sausheong/gwp/Chapter_2_Go_ChitChat/chitchat/data"
+	"fmt"
 	"net/http"
+
+	"github.com/alex-levin/gwp/Chapter_2_Go_ChitChat/chitchat/data"
 )
 
 // GET /login
@@ -30,9 +32,11 @@ func signupAccount(writer http.ResponseWriter, request *http.Request) {
 		Email:    request.PostFormValue("email"),
 		Password: request.PostFormValue("password"),
 	}
+	fmt.Println(">>>user", user)
 	if err := user.Create(); err != nil {
 		danger(err, "Cannot create user")
 	}
+	fmt.Println(">>>err: ", err)
 	http.Redirect(writer, request, "/login", 302)
 }
 

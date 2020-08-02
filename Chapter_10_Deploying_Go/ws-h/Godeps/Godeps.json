@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/sausheong/ws-h",
+	"ImportPath": "github.com/alex-levin/ws-h",
 	"GoVersion": "go1.4.2",
 	"Deps": [
 		{

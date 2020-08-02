@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "github.com/sausheong/mosaic-b/routers"
-	"github.com/sausheong/mosaic-b/mosaic"
+	_ "github.com/alex-levin/mosaic-b/routers"
+	"github.com/alex-levin/mosaic-b/mosaic"
 	"github.com/astaxie/beego"
 )
 

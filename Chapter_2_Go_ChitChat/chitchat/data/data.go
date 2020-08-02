@@ -5,15 +5,18 @@ import (
 	"crypto/sha1"
 	"database/sql"
 	"fmt"
-	_ "github.com/lib/pq"
 	"log"
+
+	_ "github.com/lib/pq"
 )
 
 var Db *sql.DB
 
 func init() {
 	var err error
-	Db, err = sql.Open("postgres", "dbname=chitchat sslmode=disable")
+	// https://golang.org/pkg/database/sql/#Open
+	// "postgres" id database driver name (like JDBC driver)
+	Db, err = sql.Open("postgres", "dbname=chitchat user=postgres password=F4nt0m45 sslmode=disable")
 	if err != nil {
 		log.Fatal(err)
 	}

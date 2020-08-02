@@ -8,7 +8,7 @@
 package routers
 
 import (
-	"github.com/sausheong/ws-b/controllers"
+	"github.com/alex-levin/ws-b/controllers"
 
 	"github.com/astaxie/beego"
 )

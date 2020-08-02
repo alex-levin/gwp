@@ -3,7 +3,7 @@ package controllers
 import (
 	"strconv"
 	"fmt"
-	"github.com/sausheong/ws-b/models"
+	"github.com/alex-levin/ws-b/models"
 	"encoding/json"
 
 	"github.com/astaxie/beego"

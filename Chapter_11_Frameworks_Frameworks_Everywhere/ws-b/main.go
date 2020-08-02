@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "github.com/sausheong/ws-b/docs"
-	_ "github.com/sausheong/ws-b/routers"
+	_ "github.com/alex-levin/ws-b/docs"
+	_ "github.com/alex-levin/ws-b/routers"
 
 	"github.com/astaxie/beego"
 )
